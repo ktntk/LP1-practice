@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+body {
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  background-color: #cfdedf;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section {
+  padding: 3% 0 0 0;
+  border-top: solid 3px #888;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* ヘッダーナビ */
+.header_wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: #a2997f;
+  z-index: 999;
+}
+
+.header_nav ul {
+  width: 100%;
+  display: table;
+}
+
+.header_nav ul li {
+  width: 5%;
+  display: table-cell;
+  text-align: center;
+  padding: 1.5%;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header_nav ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header_nav ul li a:hover {
+  color: #888;
+}
+
+/* トップ */
+.top {
+  width: auto;
+  height: 140vh;
+  background-color: #f4efdf;
+}
+
+.top_logo {
+  position: absolute;
+  top: 75vh;
+  left: 10vh;
+}
+
+.top_wrapper {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  background: url("../img/top.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.top_inner span {
+  position: absolute;
+  top: 110vh;
+  right: 10%;
+  text-align: end;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Caveat", cursive;
+}
+
+/* ABOUT */
+.about_img_1 {
+  position: relative;
+}
+
+.about_img_1::after {
+  content: "";
+  position: absolute;
+  background: url("../img/about1.jpg") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.about_img_1{
+  border: none;
+}
+
+.about_img_2 {
+  position: relative;
+}
+
+.about_img_2::after {
+  content: "";
+  position: absolute;
+  background: url("../img/about2.jpg") no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 50%;
+  width: 60%;
+  height: 100%;
+}
+
+.about_img_2{
+  border: none;
+}
+
+.about_descript {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 40%;
+  padding-bottom: 5%;
+}
+
+.about_descript_right {
+  position: relative;
+  left: 60%;
+}
+
+.title span {
+  color: #000;
+  font-size: 2.5rem;
+  border-bottom: solid 2px #000;
+  padding-bottom: 5%;
+}
+
+/* MENU */
+.frame_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  width: 35%;
+  height: 60vh;
+  background-color: #f4efdf;
+  border-radius: 5px;
+  margin: 0 5%;
+  padding: 5%;
+}
+
+.menu_descript {
+  font-size: 25px;
+  margin-left: 3%;
+  padding: 2% 0;
+}
+
+.txt h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Caveat;
+  margin-bottom: 7.5%;
+  border-bottom: solid 2px #000;
+}
+
+.txt h3 span {
+  font-size: 2.5rem;
+  font-family: inter;
+}
+
+.txt ul li {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 25px;
+  margin: 7% 15%;
+}
+
+/* NEWS */
+.news_descript {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.news_block {
+  display: inline-flex;
+  margin: 0 3% 2% 8%;
+}
+
+.news_block:hover {
+  opacity: 0.5;
+}
+
+.news_body {
+  margin: 2.5% 0;
+}
+.news_body h3 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* ACCESS */
+.map {
+  display: flex;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.access_txt {
+  justify-content: center;
+  font-size: 30px;
+  margin-left: 15%;
+}
+
+.info {
+  text-align: center;
+  padding-top: 50%;
+}
+
+.sns {
+  display: flex;
+}
+
+.sns1 {
+  margin: 0 20% 0 12%;
+}
+
+.footer {
+  background-color: #a2997f;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
